@@ -7,13 +7,13 @@ class PhpFunctionExtensionTest extends PHPUnit_Framework_TestCase
     public function setUp()
     {
         $loader = new Twig_Loader_Array(array(
-            'md5'   => '{{ md5("umpirsky") }} is md5 of umpirsky.',
+            'md5' => '{{ md5("umpirsky") }} is md5 of umpirsky.',
             'floor' => '{{ floor(7.7) }} is floor of 7.7.',
-            'ceil'  => '{{ ceil(6.7) }} is ceil of 6.7.',
+            'ceil' => '{{ ceil(6.7) }} is ceil of 6.7.',
         ));
 
         $this->twig = new Twig_Environment($loader);
-        $this->twig->addExtension(new Umpirsky\Twig\Extension\PhpFunctionExtension());
+        $this->twig->addExtension(new Pongtan\Twig\Extension\PhpFunctionExtension());
     }
 
     /**

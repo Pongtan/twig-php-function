@@ -1,10 +1,9 @@
 <?php
 
-namespace Umpirsky\Twig\Extension;
+namespace Pongtan\Twig\Extension;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
-use BadFunctionCallException;
 
 class PhpFunctionExtension extends Twig_Extension
 {
